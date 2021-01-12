@@ -1,0 +1,120 @@
+<template lang="pug">
+.home
+  plug(_name="module6" _src="https://template.owo.ink/504bcad8da1a28e9.owo")
+  .login-box
+    h2 用户注册
+    .h20
+    .input-box
+      span 姓名
+      input.username(type="text" placeholder="请输入真实姓名")
+    .input-box
+      span 手机号
+      input.phone(type="text" placeholder="请输入手机号")
+    .input-box
+      span 身份证
+      input.card(type="text" placeholder="请输入身份证号")
+    .input-box
+      span 邮箱
+      input.email(type="text" placeholder="请输入邮箱")
+    .input-box
+      span 密码
+      input.password(type="password" placeholder="请设置一个至少6位的密码")
+    .input-box
+      span 密码确认
+      input.passwordr(type="password" placeholder="请重复密码")
+    .h20
+    input.login-button.button(type="button" value="提交")
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+.home {
+  background-image: url('@|bg.jpg|');
+  background-size: cover;
+}
+.login-box {
+  background-color: white;
+  box-shadow: 1px 1px 5px #ccc;
+  width: 700px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 460px;
+  margin: auto;
+  padding: 60px;
+  h2 {
+    color: #4182f9;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .input-box {
+    border-radius: 10px;
+    margin-top: 10px;
+    input {
+      height: 30px;
+      width: 230px;
+      border-radius: 20px;
+      background-color: white;
+      border: none;
+      padding: 5px;
+      border: 1px solid #9b9b9b;
+      color: #9b9b9b;
+      font-weight: bold;
+      display: block;
+      margin: 0 10px;
+      outline: none;
+      padding: 5px 15px;
+    }
+  }
+}
+.username {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
+}
+.password {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 16px;
+}
+.button {
+  width: 284px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #098dee;
+  color: white;
+  border-radius: 22px;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+  display: block;
+  border: none;
+  outline: none;
+}
+.register-button {
+  background-color: #f6fbff;
+  border: 1px solid #dfdfdf;
+  color: #aba6a6;
+}
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: block;
+    width: 80px;
+    text-align: center;
+    color: #999999;
+  }
+}
+</style>

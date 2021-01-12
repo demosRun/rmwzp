@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=1000, user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="description" content="{TAG_59447_TAG}" />
+  <meta name="keywords" content="{TAG_59446_TAG}" />
+  <meta name="catalogs" content="{TAG_83943_TAG}" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.5vq714tmj23.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+
+</head>
+
+<body>
+
+  <!-- 页面[page]-->
+  <div class="conn page" template="page" style="display: block;">
+    <div class="title-bar">
+      <div class="content">
+        <a target="_blank" href="http://www.people.com.cn/">
+          <img width="80" height="30" alt="人民网" title="人民网" src="./static/resource/dbf7534a99f62fca.png">
+        </a>
+      </div>
+    </div>
+    <img class="show-img" src="./static/resource/home-bg.png">
+    <div class="user-info">
+      <span>用户：</span>
+      <a href="#">毛湃</a>
+    </div>
+    <div class="table-show clear">
+      <div class="table-item zhiwei fl" onclick="change(0)">职位申请</div>
+      <div class="table-item gerenzhongxin active fr" onclick="change(1)">个人中心</div>
+    </div>
+    <div class="geren-box">
+      <div class="card-box">
+        <a href="#">
+          <img src="./static/resource/geren.png">
+          <span>个人中心</span>
+        </a>
+      </div>
+    </div>
+    <div class="zhiwei-box clear" style="display: none;">
+      <div class="card-box fl">
+        <a href="#">
+          <img src="./static/resource/xiaoyuan.png">
+          <span>校园招聘</span>
+        </a>
+      </div>
+      <div class="card-box fl">
+        <a href="#">
+          <img src="./static/resource/shehui.png">
+          <span>社会招聘</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./static/js/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script>
+    function change(index) {
+      if (index == 0) {
+        document.querySelector('.gerenzhongxin').classList.remove('active')
+        document.querySelector('.zhiwei').classList.add('active')
+        document.querySelector('.geren-box').style.display = 'none'
+        document.querySelector('.zhiwei-box').style.display = 'block'
+      } else {
+        document.querySelector('.gerenzhongxin').classList.add('active')
+        document.querySelector('.zhiwei').classList.remove('active')
+        document.querySelector('.geren-box').style.display = 'block'
+        document.querySelector('.zhiwei-box').style.display = 'none'
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<template lang="pug">
+.conn
+  plug(_name="module6" _src="https://template.owo.ink/504bcad8da1a28e9.owo")
+  img.show-img(src="@|home-bg.png|")
+  .user-info
+    span 用户：
+    a(href="#") 毛湃
+  .table-show.clear
+    .table-item.zhiwei.fl(onclick="change(0)") 职位申请
+    .table-item.gerenzhongxin.active.fr(onclick="change(1)") 个人中心
+  .geren-box
+    .card-box
+      img(src="@|geren.png|")
+      span 个人中心
+  .zhiwei-box(style="display: none;")
+    .card-box
+      img(src="@|xiaoyuan.png|")
+      span 校园招聘
+    .card-box
+      img(src="@|shehui.png|")
+      span 社会招聘
+</template>
+
+<script>
+  function change(index) {
+    if (index == 0) {
+      document.querySelector('.gerenzhongxin').classList.remove('active')
+      document.querySelector('.zhiwei').classList.add('active')
+      document.querySelector('.geren-box').style.display = 'none'
+      document.querySelector('.zhiwei-box').style.display = 'block'
+    } else {
+      document.querySelector('.gerenzhongxin').classList.add('active')
+      document.querySelector('.zhiwei').classList.remove('active')
+      document.querySelector('.geren-box').style.display = 'block'
+      document.querySelector('.zhiwei-box').style.display = 'none'
+    }
+  }
+</script>
+
+
+<style lang="less">
+.conn {
+
+}
+.show-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.user-info {
+  position: absolute;
+  left: 57%;
+  right: 0;
+  top: 65px;
+  color: white;
+  margin: 0 auto;
+  width: 100px;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+.table-show {
+  width: 300px;
+  line-height: 60px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 24px;
+  margin-bottom: 60px;
+  .table-item {
+    width: 150px;
+    text-align: center;
+    color: #666666;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .active {
+    background-image: url('@|bottom-line.png|');
+  }
+}
+.card-box {
+  background-color: white;
+  box-shadow: 1px 1px 6px #ccc;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: 4px solid #407be7;
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+  span {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+}
+.card-box:hover {
+  background-color: #407be7;
+  span {
+    color: white;
+  }
+}
+</style>
