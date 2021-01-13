@@ -1,0 +1,104 @@
+<template lang="pug">
+.conn
+  plug(_name="module6" _src="https://template.owo.ink/504bcad8da1a28e9.owo")
+  .title-bar-2.clear
+    .w1200.clear
+      h2 考试报名系统——消息通知
+      .menu.clear
+        .menu-item
+          a(href="") 你好，用户名
+        .menu-item
+          a(href="") 校园招聘
+        .menu-item
+          a(href="") 社会招聘
+  .w1200.clear
+    .top-info 个人中心——消息通知
+    .box
+      .h60
+      h2 笔试通知
+      .h60
+      p 字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px字体宋体字号14号行间距30px
+      .h80
+      .button 确认参加
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+.conn {
+  background-size: cover;
+  background-color: #fbfcff;
+}
+.title-bar-2 {
+  line-height: 70px;
+  margin-top: 40px;
+  height: 70px;
+  border-bottom: 1px solid #d5d6d8;
+  h2 {
+    float: left;
+    display: inline-block;
+    color: #4182f9;
+    font-size: 30px;
+  }
+  .menu {
+    float: right;
+    .menu-item {
+      float: right;
+      margin: 0 10px;
+      color: #676869;
+      font-size: 14px;
+      font-weight: bold;
+      a {
+        color: #676869;
+      }
+    }
+  }
+}
+.top-info {
+  line-height: 80px;
+  font-size: 16px;
+  color: #666;
+}
+.box {
+  h2 {
+    text-align: center;
+    line-height: 60px;
+    color: #2a2a2a;
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 36px;
+    text-indent: 2em;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.h60 {
+  height: 60px;
+}
+.h20 {
+  height: 20px;
+}
+.h80 {
+  height: 80px;
+}
+.button {
+  width: 140px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #098dee;
+  color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 17px;
+}
+</style>

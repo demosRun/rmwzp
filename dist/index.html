@@ -19,7 +19,7 @@
   <meta name="catalogs" content="{TAG_83943_TAG}" />
 
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.5vq714tmj23.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.s5nfpeliz6l.css">
 
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
@@ -37,56 +37,62 @@
         </a>
       </div>
     </div>
-    <img class="show-img" src="./static/resource/home-bg.png">
-    <div class="user-info">
-      <span>用户：</span>
-      <a href="#">毛湃</a>
-    </div>
-    <div class="table-show clear">
-      <div class="table-item zhiwei fl" onclick="change(0)">职位申请</div>
-      <div class="table-item gerenzhongxin active fr" onclick="change(1)">个人中心</div>
-    </div>
-    <div class="geren-box">
-      <div class="card-box">
-        <a href="#">
-          <img src="./static/resource/geren.png">
-          <span>个人中心</span>
-        </a>
+    <div class="title-bar-2 clear">
+      <div class="w1200 clear">
+        <h2>考试报名系统——消息通知</h2>
+        <div class="menu clear">
+          <div class="menu-item">
+            <a href="">你好，用户名</a>
+          </div>
+          <div class="menu-item">
+            <a href="">校园招聘</a>
+          </div>
+          <div class="menu-item">
+            <a href="">社会招聘</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="zhiwei-box clear" style="display: none;">
-      <div class="card-box fl">
-        <a href="#">
-          <img src="./static/resource/xiaoyuan.png">
-          <span>校园招聘</span>
-        </a>
-      </div>
-      <div class="card-box fl">
-        <a href="#">
-          <img src="./static/resource/shehui.png">
-          <span>社会招聘</span>
-        </a>
+    <div class="h60"></div>
+    <div class="w1200 clear">
+      <div class="box clear">
+        <div class="left fl">
+          <div class="left-menu clear">
+            <a href="#">
+              <img class="icon fl" src="./static/resource/xiaoxi.png">
+              <span class="fl">消息通知</span>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="left-menu clear active">
+            <a href="#">
+              <img class="icon fl" src="./static/resource/jindu.png">
+              <span class="fl">进度查询</span>
+              <div class="clear"></div>
+            </a>
+          </div>
+        </div>
+        <div class="right fr">
+          <div class="icon-box clear">
+            <div class="icon-item icon-item-1 active"></div>
+            <div class="icon-item icon-item-2 tep active"></div>
+            <div class="icon-item icon-item-3 active"></div>
+            <div class="icon-item icon-item-4 tep active"></div>
+            <div class="icon-item icon-item-5 active"></div>
+            <div class="icon-item icon-item-6 tep active"></div>
+            <div class="icon-item icon-item-7"></div>
+            <div class="icon-item icon-item-8 tep"></div>
+            <div class="icon-item icon-item-9"></div>
+          </div>
+        </div>
       </div>
     </div>
+    <div id="copyright">人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用<br>Copyright © 1997-2021 by www.people.com.cn. all rights reserved</div>
   </div>
 
 
   <script src="./static/js/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
-  <script>
-    function change(index) {
-      if (index == 0) {
-        document.querySelector('.gerenzhongxin').classList.remove('active')
-        document.querySelector('.zhiwei').classList.add('active')
-        document.querySelector('.geren-box').style.display = 'none'
-        document.querySelector('.zhiwei-box').style.display = 'block'
-      } else {
-        document.querySelector('.gerenzhongxin').classList.add('active')
-        document.querySelector('.zhiwei').classList.remove('active')
-        document.querySelector('.geren-box').style.display = 'block'
-        document.querySelector('.zhiwei-box').style.display = 'none'
-      }
-    }
-  </script>
+
 </body>
 
 </html>

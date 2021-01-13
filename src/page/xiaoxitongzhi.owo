@@ -1,0 +1,142 @@
+<template lang="pug">
+.conn
+  plug(_name="module6" _src="https://template.owo.ink/504bcad8da1a28e9.owo")
+  .title-bar-2.clear
+    .w1200.clear
+      h2 考试报名系统——消息通知
+      .menu.clear
+        .menu-item
+          a(href="") 你好，用户名
+        .menu-item
+          a(href="") 校园招聘
+        .menu-item
+          a(href="") 社会招聘
+  .h60
+  .w1200.clear
+    .box.clear
+      .left.fl
+        .left-menu.clear.active
+          a(href="#")
+            img.icon.fl(src="@|xiaoxi.png|")
+            span.fl 消息通知
+            .clear
+        .left-menu.clear
+          a(href="#")
+            img.icon.fl(src="@|jindu.png|")
+            span.fl 进度查询
+            .clear
+      .right.fr
+        ul
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+          li
+            a(href="#") 孟建柱：做网络发展建设者网络安全践行者
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+.conn {
+  background-size: cover;
+  background-color: #fbfcff;
+}
+.title-bar-2 {
+  line-height: 70px;
+  margin-top: 40px;
+  height: 70px;
+  border-bottom: 1px solid #d5d6d8;
+  h2 {
+    float: left;
+    display: inline-block;
+    color: #4182f9;
+    font-size: 30px;
+  }
+  .menu {
+    float: right;
+    .menu-item {
+      float: right;
+      margin: 0 10px;
+      color: #676869;
+      font-size: 14px;
+      font-weight: bold;
+      a {
+        color: #676869;
+      }
+    }
+  }
+}
+.h60 {
+  height: 60px;
+}
+.h20 {
+  height: 20px;
+}
+.h80 {
+  height: 80px;
+}
+.left-menu {
+  height: 50px;
+  width: 240px;
+  padding: 5px;
+  margin-bottom: 20px;
+  .icon {
+    width: 24px;
+    margin: 13px;
+    padding-left: 20px;
+    border-left: 3px solid white;
+  }
+  span {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 16px;
+    color: #666666;
+  }
+  a {
+    display: block;
+  }
+}
+.left-menu.active {
+  background-color: #f1f4fe;
+  .icon {
+    border-left: 3px solid #4182f9;
+  }
+}
+.right {
+  width: 750px;
+  padding: 0 100px;
+}
+ul {
+  li {
+    line-height: 40px;
+    font-size: 16px;
+    background-image: url('@|doit.png|');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+  }
+  a {
+    display: block;
+    color: #333333;
+  }
+}
+</style>
